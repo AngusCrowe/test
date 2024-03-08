@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h5>This is the location of the weather data:</h5>
+{{ weather_dict.location }}
+<h5>This is the timezone of the weather data:</h5>
+{{ weather_dict.timezone }}
+<h5>This is the date and time the data was taken from:</h5>
+{{ weather_dict.timestamp_local }}
+<h5>This is the cloud description:</h5>
+{{ weather_dict.description }}
+<h5>This is the temperature in degrees celsius as of the time the data was taken from at that location:</h5>
+{{ weather_dict.temp_c }}
+<h5>This is the wind speed of the location in metres per second:</h5>
+{{ weather_dict.wind_speed }}
+
+{% endblock %}

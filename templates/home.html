@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<form action="/results" method="POST">
+
+    <h2> 1. Select your location:</h2>
+    <p> Enter either your city name:</p>
+    <input type="text" name="city" placeholder="Please enter city">
+    <p> Or latitude and longitude of your desired location:</p>
+    <input type="text" name="latitude" placeholder="Please enter latitude">
+    <input type="text" name="longitude" placeholder="Please enter longitude">
+
+    <h2> Would you like temperature in celcius or farenheit?</h2>
+
+<select name="city">
+  <option value="select">Please make selection</option>
+  <option value="farenheit">Farenheit</option>
+  <option value="celcius">Celcius</option>
+</select>
+
+    <input type="submit">
+</form>
+
+<img src="static/test_chart.png">
+
+<script>
+
+</script>
+
+{% endblock %}
